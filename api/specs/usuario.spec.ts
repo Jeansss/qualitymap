@@ -43,6 +43,8 @@ apiData.put_user.forEach((data: JSONValue) => {
     const userId = responsePostUserJson._id;
 
     requestBody.nome = faker.person.firstName();
+    
+    //Criando novo usuário no cenário negativo para utilizar o email deste para gerar o erro ao atualizar o usuário criado anteriormente
     if (data.scenario === 'error_response') {
       email = `usuario${Math.floor(Math.random() * 7000)}@test.com`;
       requestBody = new PostUsuarioRequestBuilder()
@@ -104,6 +106,7 @@ apiData.delete_user.forEach((data: JSONValue) => {
     expect.soft(responseDeleteUserId).toHaveStatusCode(data.status_code);
     expect.soft(responseDeleteUserId).toHaveJSON(expectedResponseJson);
 
+    //Validando se o usuário foi deletado no cenário de sucesso
     if (data.scenario === 'success_response') {
       const responseGetUserId = await new UsuarioServiceClient().getUser(userId);
       const expectedGetResponseJson = new GetUsuarioResponseBuilder().selectResponseBody('error_response', requestBody);

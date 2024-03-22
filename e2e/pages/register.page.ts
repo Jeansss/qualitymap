@@ -31,6 +31,7 @@ class RegisterPage {
     await this.registerElements.inptMonthOfBirth().selectOption({ value: user.monthOfBirth });
     await this.registerElements.inptYearOfBirth().selectOption({ value: user.yearOfBirth });
 
+    //validando se a data foi preenchida corretamente (conforme solicitado no desafio)
     const date = await this.formatDate(user.dayOfBirth, user.monthOfBirth, user.yearOfBirth);
     const filledDate = await this.formatDate(await this.registerElements.inptDayOfBirth().inputValue(),
       await this.registerElements.inptMonthOfBirth().inputValue(),
