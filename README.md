@@ -3,14 +3,22 @@
 ## Cenários:
 
 **Scenario:** Consumer registration
+
 **Given** the consumer goes to the registration page 
+
 **When** the consumer registers on the demoecommerce
+
 **Then** the consumer should be registered successfully
 
+
+
 **Scenario Outline:** Consumer tries registration with invalid form
+
 **Given** the consumer goes to the registration page  
+
 **When** the consumer tries to continue the registration with "<case>" "<field>"  
-**Then** the error message should be presented as "<message>"  
+
+**Then** the error message should be presented as "<message>"
 
 **Examples:**  
 | field            | case    |
