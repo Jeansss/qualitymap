@@ -1,0 +1,57 @@
+{
+  "post_user": [
+    {
+      "scenario": "success_response",
+      "password": "newPassword50*",
+      "administrador": "true",
+      "status_code": 201
+    },
+    {
+      "scenario": "error_response",
+      "password": "newPassword50*",
+      "administrador": "true",
+      "status_code": 400
+    }
+  ],
+  "get_user": [
+    {
+      "scenario": "success_response",
+      "password": "newPassword50*",
+      "administrador": "true",
+      "status_code": 200
+    },
+    {
+      "scenario": "error_response",
+      "status_code": 400
+    }
+  ],
+  "put_user": [
+    {
+      "scenario": "success_response",
+      "password": "newPassword50*",
+      "administrador": "true",
+      "status_code": 200
+    },
+    {
+      "scenario": "error_response",
+      "password": "newPassword50*",
+      "administrador": "true",
+      "status_code": 400
+    }
+  ],
+  "delete_user": [
+    {
+      "scenario": "success_response",
+      "password": "newPassword50*",
+      "administrador": "true",
+      "status_code": 200
+    },
+    {
+      "scenario": "error_response",
+      "password": "newPassword50*",
+      "administrador": "true",
+      "status_code": 200
+    }
+  ]
+}
+  

@@ -1,0 +1,28 @@
+{
+  "register":[
+    {
+      "scenario": "blankFirstName"
+    },
+    {
+      "scenario": "blankLastName"
+    },
+    {
+      "scenario": "blankEmail"
+    },
+    {
+      "scenario": "invalidEmail"
+    },
+    {
+      "scenario": "blankPassword"
+    },
+    {
+      "scenario": "invalidPassword"
+    },
+    {
+      "scenario": "blankConfirmPassword"
+    },
+    {
+      "scenario": "invalidConfirmPassword"
+    }
+  ]
+}

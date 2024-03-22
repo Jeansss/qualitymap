@@ -1,0 +1,15 @@
+{
+  "error": {
+    "blankFirstName": "First name is required.",
+    "blankLastName": "Last name is required.",
+    "blankEmail": "Email is required.",
+    "invalidEmail": "Wrong email",
+    "blankPassword": "Password is required.",
+    "invalidPassword": "Password must meet the following rules: must have at least 6 characters",
+    "blankConfirmPassword": "Password is required.",
+    "invalidConfirmPassword": "The password and confirmation password do not match."
+  },
+  "success": {
+    "registered": "Your registration completed"
+  }
+}

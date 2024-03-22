@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "target": "esnext",
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "module": "commonjs",
+    "types": [
+      "playwright",
+      "node"
+    ],
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "**/*.ts",
+    "./playwright.d.ts",
+    "**.js",
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
